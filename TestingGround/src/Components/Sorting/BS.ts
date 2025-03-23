@@ -13,7 +13,6 @@ function binarySearch(arr: number[], target: number): number {
             right = mid - 1;
         }
     }
-
     return -1; // Target not found
 }
 

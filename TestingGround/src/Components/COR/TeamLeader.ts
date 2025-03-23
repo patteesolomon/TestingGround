@@ -10,7 +10,8 @@ export class TeamLeader extends LeaveHandler {
             if(leave.getEmpTier() <= 4){
                 return "Your leave days has been APPROVED by TeamLeader";
             }else{
-                return "You employee Tier level is too low for request " + leave.getNumberOfDays() + " days";
+                return "You employee Tier level is too low for request " + 
+                leave.getNumberOfDays() + " days";
             }
         }else{
             return "Too high of a request? Add more.. APPROVED BY KNUX";

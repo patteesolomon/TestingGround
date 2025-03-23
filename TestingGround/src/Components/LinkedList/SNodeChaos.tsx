@@ -25,11 +25,11 @@ const SNodeChaos = (name: string, id: number, data: []) => {
     };
 
     const handleAddData = () => {
-                    // Add the inputValue to the data array
-                    // You can modify the logic here based on your requirements
-                    const newData = [...data, inputValue];
-                    def.addNodeData(newData);
-                    setInputValue('');
+        // Add the inputValue to the data array
+        // You can modify the logic here based on your requirements
+        const newData = [...data, inputValue];
+        def.addNodeData(newData);
+        setInputValue('');
     };
     
     const outPut = () => {
@@ -38,7 +38,6 @@ const SNodeChaos = (name: string, id: number, data: []) => {
     return (
         // Placeholder expression
         <>
-            
             <input type="text" value={inputValue} onChange={handleInputChange} />
             <button onClick={handleAddData}>Add Data</button>
         </>
